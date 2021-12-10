@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/andrewpham.games/static/css/main.7fd2a2e1.chunk.css",
-    "main.js": "/andrewpham.games/static/js/main.a3e0c0f9.chunk.js",
-    "main.js.map": "/andrewpham.games/static/js/main.a3e0c0f9.chunk.js.map",
+    "main.js": "/andrewpham.games/static/js/main.b618a2e7.chunk.js",
+    "main.js.map": "/andrewpham.games/static/js/main.b618a2e7.chunk.js.map",
     "runtime-main.js": "/andrewpham.games/static/js/runtime-main.1e53e02a.js",
     "runtime-main.js.map": "/andrewpham.games/static/js/runtime-main.1e53e02a.js.map",
     "static/js/2.733fadae.chunk.js": "/andrewpham.games/static/js/2.733fadae.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1e53e02a.js",
     "static/js/2.733fadae.chunk.js",
     "static/css/main.7fd2a2e1.chunk.css",
-    "static/js/main.a3e0c0f9.chunk.js"
+    "static/js/main.b618a2e7.chunk.js"
   ]
 }
