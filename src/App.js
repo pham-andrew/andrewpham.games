@@ -10,9 +10,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
+import Flag from './Flag'
+import Witp from './Witp';
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const { children, value, index, ...other } = props
 
   return (
     <div
@@ -28,20 +30,20 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
-  );
+  )
 }
 
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
-};
+}
 
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     'aria-controls': `simple-tabpanel-${index}`,
-  };
+  }
 }
 
 const App = () => {
@@ -50,7 +52,7 @@ const App = () => {
 
   const handleTabChange = (event, newValue) => {
     setTab(newValue);
-  };
+  }
 
   const theme = React.useMemo(() =>
       createTheme({
@@ -59,9 +61,9 @@ const App = () => {
         },
       }),
     [],
-  );
+  )
 
-  return (<>
+  return <>
     <ThemeProvider theme={theme}>
       <Paper sx={{margin: '50px'}}>
         <Box sx={{ width: '100%' }}>
@@ -118,138 +120,10 @@ const App = () => {
             </Box>
           </TabPanel>
           <TabPanel value={tab} index={1}>
-            <Typography variant='h3' sx={{m: 1}}>Memory</Typography>
-            <Typography variant='body1' sx={{m: 1}}>Some mages develop the power to summon copies of heroes to support their party; however, the summoning spell requires a connection that some may find too personal...</Typography>
-            <Typography variant='h5' sx={{m: 1}}>Fragments</Typography>
-            <Box sx={{display: 'flex'}}>
-              <Card sx={{ maxWidth: 200, margin: 2 }}>
-                <CardActionArea onClick={()=>setTab(2)}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://previews.123rf.com/images/apoev/apoev1709/apoev170900088/85467744-default-avatar-anime-girl-profile-icon-grey-photo-manga-placeholder.jpg"
-                  />
-                  <CardContent>
-                    <Typography variant="h5" component="div">
-                      Alice
-                    </Typography>
-                    <Typography gutterBottom variant="h7" component="div">
-                      Thief > Assassin
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Your childhood friend grows up to be a cool and collected guildmaster!
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-              <Card sx={{ maxWidth: 200, margin: 2 }}>
-                <CardActionArea onClick={()=>setTab(2)}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://previews.123rf.com/images/apoev/apoev1709/apoev170900088/85467744-default-avatar-anime-girl-profile-icon-grey-photo-manga-placeholder.jpg"
-                  />
-                  <CardContent>
-                    <Typography variant="h5" component="div">
-                      El
-                    </Typography>
-                    <Typography gutterBottom variant="h7" component="div">
-                      Witch
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Dark robe, oversized hat... yep she's a witch.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-              <Card sx={{ maxWidth: 200, margin: 2 }}>
-                <CardActionArea onClick={()=>setTab(2)}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://previews.123rf.com/images/apoev/apoev1709/apoev170900088/85467744-default-avatar-anime-girl-profile-icon-grey-photo-manga-placeholder.jpg"
-                  />
-                  <CardContent>
-                    <Typography variant="h5" component="div">
-                      Lux
-                    </Typography>
-                    <Typography gutterBottom variant="h7" component="div">
-                      Knight
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Daughter of a poor noble, Lux dreams of being a knight.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Box>
-            <Typography variant='h5' sx={{m: 1}}>Cities</Typography>
-            <Box sx={{display: 'flex'}}>
-              <Card sx={{ maxWidth: 200, margin: 2 }}>
-                <CardActionArea onClick={()=>setTab(2)}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://i0.wp.com/4.bp.blogspot.com/-p2bdvvEhRaE/XOlXughW4_I/AAAAAAAADIU/jqI2brLlXwMYzdnks33IY_pwiXp3sMk2gCKgBGAs/w0/anime-girl-mask-cyberpunk-sci-fi-uhdpaper.com-4K-168.jpg"
-                  />
-                  <CardContent>
-                    <Typography variant="h5" component="div">
-                      Little Tokyo
-                    </Typography>
-                    <Typography gutterBottom variant="h7" component="div">
-                      Thieves' Guild
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      A squalid and crowded urban battlefield for rival gangs with a love of streetwear.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-              <Card sx={{ maxWidth: 200, margin: 2 }}>
-                <CardActionArea onClick={()=>setTab(2)}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f8582be-2c46-4f47-9191-31e1f0c0ad7d/d7hqtrm-cb8b9648-9cc1-4a6a-a467-ab12052c80a4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmODU4MmJlLTJjNDYtNGY0Ny05MTkxLTMxZTFmMGMwYWQ3ZFwvZDdocXRybS1jYjhiOTY0OC05Y2MxLTRhNmEtYTQ2Ny1hYjEyMDUyYzgwYTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cAEmQSvXJ0gbY3nLr4G5aeWYm9QtwobiO0zw1L5ClX8"
-                  />
-                  <CardContent>
-                    <Typography variant="h5" component="div">
-                      Skyport
-                    </Typography>
-                    <Typography gutterBottom variant="h7" component="div">
-                      Order of Knights
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      A fantasy city with sky high towers and flying tall ships.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-              <Card sx={{ maxWidth: 200, margin: 2 }}>
-                <CardActionArea onClick={()=>setTab(2)}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=1600&h=800&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2018%2F01%2Fnight-snow-shirakawa-go-village-japan-MOSTSNOW0118.jpg"
-                  />
-                  <CardContent>
-                    <Typography variant="h5" component="div">
-                      Lenia
-                    </Typography>
-                    <Typography gutterBottom variant="h7" component="div">
-                      Magic Academy
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      A snowy town built around the magic academy surronded by forest.
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Box>
+            <Flag />
           </TabPanel>
           <TabPanel value={tab} index={2}>
-            <Typography variant='h3'>Terrans vs Westaboos</Typography>
-            <Typography variant='body1'>In a distant galaxy, aliens receive television transmissions from the 50s. After a glipse at the golden age of westerns, they head to Earth with revolvers and lever action rifles only to encounter earthlings a millenia more advanced...</Typography>
+            <Witp />
           </TabPanel>
           <TabPanel value={tab} index={3}>
             MAKIN GAMES IS REAL EXPENSIVE
@@ -257,7 +131,6 @@ const App = () => {
         </Box>
       </Paper>
     </ThemeProvider>
-  </>);
+  </>
 }
-
-export default App;
+export default App
