@@ -123,7 +123,7 @@ const App = () => {
           </TabPanel>
           <TabPanel value={tab} index={2}>
             <Typography variant='h3'>Terrans vs Westaboos</Typography>
-            <Typography variant='body1'>In the distant future aliens from another world finally receive western television transmissions. Eager to join in the fight, they head to earth with revolvers and lever action rifles only to encounter earthlings a millenia more advanced...</Typography>
+            <Typography variant='body1'>In a distant galaxy, aliens receive television transmissions from the 50s. After a glipse at the golden age of westerns, they head to Earth with revolvers and lever action rifles only to encounter earthlings a millenia more advanced...</Typography>
           </TabPanel>
           <TabPanel value={tab} index={3}>
             MAKIN GAMES IS REAL EXPENSIVE
