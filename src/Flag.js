@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 const Flag = () => {
     return <>
         <Typography variant='h3' sx={{m: 1}}>Memory</Typography>
-        <Typography variant='body1' sx={{m: 1}}>Some mages develop the power to summon copies of heroes to support their party; however, the summoning spell requires a connection that some may find too personal...</Typography>
+        <Typography variant='body1' sx={{m: 1}}>Some mages develop the power to summon copies of heroes to support their party. Befriend heroes and use them in the open world!</Typography>
         <Typography variant='h5' sx={{m: 1}}>Inspirations</Typography>
         <Box sx={{display: 'flex'}}>
             <Card sx={{ maxWidth: 200, margin: 2 }}>
