@@ -40,7 +40,7 @@ const Witp = () => {
                     <CardMedia
                     component="img"
                     height="140"
-                    image="https://lh3.googleusercontent.com/proxy/B5oWDtaGfEYLOiIoU_BscOKI3wBkwL8cSDMOFfEK0_s-7yt-OW7jt5kLmzht5m2jlsfynYQzKIcAHS2uvbg24E40i-7oDlHEaAiskXn1RNI5KrHR13W8kPzubEoq_uO4TBCNC35QUgU-h5gMSLslsGpZC5F_wcnFAx1uEgXiTg"
+                    image="https://thefilmstage.com/wp-content/uploads/2012/02/django_unchained_1-759x500.jpg"
                     />
                     <CardContent>
                         <Typography variant="h5" component="div">
