@@ -4,7 +4,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -12,6 +11,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Flag from './Flag'
 import Witp from './Witp';
+import Footer from './Footer'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
@@ -54,28 +54,18 @@ const App = () => {
     setTab(newValue);
   }
 
-  const theme = React.useMemo(() =>
-      createTheme({
-        palette: {
-          mode: 'dark',
-        },
-      }),
-    [],
-  )
-
   return <>
-    <ThemeProvider theme={theme}>
       <Paper>
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width:'100%'}}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs value={tab} onChange={handleTabChange} aria-label="basic tabs example">
+            <Tabs value={tab} onChange={handleTabChange}>
               <Tab label="Home" {...a11yProps(0)} />
               <Tab label="Project: FLAG" {...a11yProps(1)} />
               <Tab label="Project: WITP" {...a11yProps(2)} />
               <Tab label="Dev Blog" {...a11yProps(3)} />
             </Tabs>
           </Box>
-          <img src="https://pham-andrew.github.io/andrewpham.games/images/hero.jpg" alt="developer's bedroom" style={{ width: '100%' }} />
+          <img src="https://pham-andrew.github.io/andrewpham.games/images/hero.jpg" alt="developer's bedroom" style={{width:'100%'}} />
           <TabPanel value={tab} index={0}>
             <Box sx={{display: 'flex'}}>
               <Card sx={{ maxWidth: 345, margin: 2 }}>
@@ -131,7 +121,7 @@ const App = () => {
           </TabPanel>
         </Box>
       </Paper>
-    </ThemeProvider>
+      <Footer />
   </>
 }
 export default App
