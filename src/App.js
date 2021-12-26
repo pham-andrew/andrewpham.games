@@ -65,7 +65,7 @@ const App = () => {
 
   return <>
     <ThemeProvider theme={theme}>
-      <Paper sx={{margin: '50px'}}>
+      <Paper>
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={tab} onChange={handleTabChange} aria-label="basic tabs example">
@@ -75,6 +75,7 @@ const App = () => {
               <Tab label="Dev Blog" {...a11yProps(3)} />
             </Tabs>
           </Box>
+          <img src="https://pham-andrew.github.io/andrewpham.games/images/hero.jpg" alt="developer's bedroom" style={{ width: '100%' }} />
           <TabPanel value={tab} index={0}>
             <Box sx={{display: 'flex'}}>
               <Card sx={{ maxWidth: 345, margin: 2 }}>
