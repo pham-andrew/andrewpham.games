@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/andrewpham.games/static/css/main.7fd2a2e1.chunk.css",
-    "main.js": "/andrewpham.games/static/js/main.ea2d98ee.chunk.js",
-    "main.js.map": "/andrewpham.games/static/js/main.ea2d98ee.chunk.js.map",
+    "main.css": "/andrewpham.games/static/css/main.5f0f458d.chunk.css",
+    "main.js": "/andrewpham.games/static/js/main.55a5e938.chunk.js",
+    "main.js.map": "/andrewpham.games/static/js/main.55a5e938.chunk.js.map",
     "runtime-main.js": "/andrewpham.games/static/js/runtime-main.1e53e02a.js",
     "runtime-main.js.map": "/andrewpham.games/static/js/runtime-main.1e53e02a.js.map",
-    "static/js/2.1062ed45.chunk.js": "/andrewpham.games/static/js/2.1062ed45.chunk.js",
-    "static/js/2.1062ed45.chunk.js.map": "/andrewpham.games/static/js/2.1062ed45.chunk.js.map",
+    "static/js/2.44bebdeb.chunk.js": "/andrewpham.games/static/js/2.44bebdeb.chunk.js",
+    "static/js/2.44bebdeb.chunk.js.map": "/andrewpham.games/static/js/2.44bebdeb.chunk.js.map",
     "static/js/3.d5e56b97.chunk.js": "/andrewpham.games/static/js/3.d5e56b97.chunk.js",
     "static/js/3.d5e56b97.chunk.js.map": "/andrewpham.games/static/js/3.d5e56b97.chunk.js.map",
     "index.html": "/andrewpham.games/index.html",
-    "static/css/main.7fd2a2e1.chunk.css.map": "/andrewpham.games/static/css/main.7fd2a2e1.chunk.css.map",
-    "static/js/2.1062ed45.chunk.js.LICENSE.txt": "/andrewpham.games/static/js/2.1062ed45.chunk.js.LICENSE.txt"
+    "static/css/main.5f0f458d.chunk.css.map": "/andrewpham.games/static/css/main.5f0f458d.chunk.css.map",
+    "static/js/2.44bebdeb.chunk.js.LICENSE.txt": "/andrewpham.games/static/js/2.44bebdeb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1e53e02a.js",
-    "static/js/2.1062ed45.chunk.js",
-    "static/css/main.7fd2a2e1.chunk.css",
-    "static/js/main.ea2d98ee.chunk.js"
+    "static/js/2.44bebdeb.chunk.js",
+    "static/css/main.5f0f458d.chunk.css",
+    "static/js/main.55a5e938.chunk.js"
   ]
 }
