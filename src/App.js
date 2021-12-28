@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Container } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer'
 import { purple } from '@mui/material/colors';
@@ -36,6 +36,15 @@ const App = () => {
       fontFamily: 'Roboto'
     }
   })
+
+  const commonStyles = {
+    bgcolor: 'background.paper',
+    borderColor: 'text.primary',
+    m: 1,
+    border: 1,
+    width: '5rem',
+    height: '5rem',
+  };
 
   return <>
     <ThemeProvider theme={theme}>
@@ -107,6 +116,9 @@ const App = () => {
           </Typography>
           <Button variant="outlined" theme={robotoTheme}>Learn More</Button>
           </Box>
+        </Box>
+        <Box sx={{display: 'flex', justifyContent: 'center', margin: 5}}>
+          <img src="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/laptop.jpg?raw=true" alt="laptop" style={{width: "500px", borderRadius: '3%'}} />
         </Box>
       </Paper>
     </ThemeProvider>
