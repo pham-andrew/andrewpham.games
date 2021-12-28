@@ -46,22 +46,54 @@ const App = () => {
           <img src="https://pham-andrew.github.io/andrewpham.games/images/hero.jpg" alt="developer's bedroom" style={{width:'100%'}} />
           <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '-7vw'}}>
             <Card sx={{ maxWidth: 500, margin: 4 }} variant="outlined">
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="300"
-                  image="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/concept.png?raw=true"
-                />
-              </CardActionArea>
+              <Box sx={{ position: 'relative' }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="300"
+                    image="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/concept.png?raw=true"
+                  />
+                </CardActionArea>
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    width: '100%',
+                    bgcolor: 'rgba(0, 0, 0, 0.54)',
+                    color: 'white',
+                    padding: '10px',
+                  }}
+                >
+                  <Typography variant="h5">Project FLAG</Typography>
+                  <Typography variant="body2" theme={robotoTheme}>Anime-inspired 2D Platformer RPG</Typography>
+                </Box>
+              </Box>
             </Card>
             <Card sx={{ maxWidth: 500, margin: 4 }} variant="outlined">
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="300"
-                  image="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/fps.jpg?raw=true"
-                />
-              </CardActionArea>
+              <Box sx={{ position: 'relative' }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="300"
+                    image="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/fps.jpg?raw=true"
+                  />
+                </CardActionArea>
+                <Box
+                    sx={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      width: '100%',
+                      bgcolor: 'rgba(0, 0, 0, 0.54)',
+                      color: 'white',
+                      padding: '10px',
+                    }}
+                  >
+                    <Typography variant="h5">Project WITP</Typography>
+                    <Typography variant="body2" theme={robotoTheme}>Slow Paced 4v4 FPS</Typography>
+                  </Box>
+              </Box>
             </Card>
           </Box>
           <Box textAlign='center'>
