@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/andrewpham.games/static/css/main.7fd2a2e1.chunk.css",
-    "main.js": "/andrewpham.games/static/js/main.8884ddb9.chunk.js",
-    "main.js.map": "/andrewpham.games/static/js/main.8884ddb9.chunk.js.map",
-    "runtime-main.js": "/andrewpham.games/static/js/runtime-main.096a7b4d.js",
-    "runtime-main.js.map": "/andrewpham.games/static/js/runtime-main.096a7b4d.js.map",
+    "main.js": "/andrewpham.games/static/js/main.2c86b8ec.chunk.js",
+    "main.js.map": "/andrewpham.games/static/js/main.2c86b8ec.chunk.js.map",
+    "runtime-main.js": "/andrewpham.games/static/js/runtime-main.30e5bb94.js",
+    "runtime-main.js.map": "/andrewpham.games/static/js/runtime-main.30e5bb94.js.map",
     "static/css/2.06660f4c.chunk.css": "/andrewpham.games/static/css/2.06660f4c.chunk.css",
-    "static/js/2.486d1531.chunk.js": "/andrewpham.games/static/js/2.486d1531.chunk.js",
-    "static/js/2.486d1531.chunk.js.map": "/andrewpham.games/static/js/2.486d1531.chunk.js.map",
-    "static/js/3.d9d123cf.chunk.js": "/andrewpham.games/static/js/3.d9d123cf.chunk.js",
-    "static/js/3.d9d123cf.chunk.js.map": "/andrewpham.games/static/js/3.d9d123cf.chunk.js.map",
+    "static/js/2.6ad5d6dc.chunk.js": "/andrewpham.games/static/js/2.6ad5d6dc.chunk.js",
+    "static/js/2.6ad5d6dc.chunk.js.map": "/andrewpham.games/static/js/2.6ad5d6dc.chunk.js.map",
+    "static/js/3.11f47c66.chunk.js": "/andrewpham.games/static/js/3.11f47c66.chunk.js",
+    "static/js/3.11f47c66.chunk.js.map": "/andrewpham.games/static/js/3.11f47c66.chunk.js.map",
     "index.html": "/andrewpham.games/index.html",
     "static/css/2.06660f4c.chunk.css.map": "/andrewpham.games/static/css/2.06660f4c.chunk.css.map",
     "static/css/main.7fd2a2e1.chunk.css.map": "/andrewpham.games/static/css/main.7fd2a2e1.chunk.css.map",
-    "static/js/2.486d1531.chunk.js.LICENSE.txt": "/andrewpham.games/static/js/2.486d1531.chunk.js.LICENSE.txt",
+    "static/js/2.6ad5d6dc.chunk.js.LICENSE.txt": "/andrewpham.games/static/js/2.6ad5d6dc.chunk.js.LICENSE.txt",
     "static/media/index.css": "/andrewpham.games/static/media/suez-one-latin-ext-400-normal.49ce9b77.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.096a7b4d.js",
+    "static/js/runtime-main.30e5bb94.js",
     "static/css/2.06660f4c.chunk.css",
-    "static/js/2.486d1531.chunk.js",
+    "static/js/2.6ad5d6dc.chunk.js",
     "static/css/main.7fd2a2e1.chunk.css",
-    "static/js/main.8884ddb9.chunk.js"
+    "static/js/main.2c86b8ec.chunk.js"
   ]
 }
