@@ -5,13 +5,17 @@ import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea, Container } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer'
 import { purple } from '@mui/material/colors';
 import "@fontsource/suez-one";
 import "@fontsource/roboto";
 import { Button } from '@mui/material';
+import { Dialog } from '@mui/material';
+import { DialogContent } from '@mui/material';
+import { DialogTitle } from '@mui/material';
+import { DialogContentText } from '@mui/material';
 
 const App = () => {
 
@@ -37,13 +41,28 @@ const App = () => {
     }
   })
 
-  const commonStyles = {
-    bgcolor: 'background.paper',
-    borderColor: 'text.primary',
-    m: 1,
-    border: 1,
-    width: '5rem',
-    height: '5rem',
+  const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const [open2, setOpen2] = React.useState(false);
+  const handleClickOpen2 = () => {
+    setOpen2(true);
+  };
+  const handleClose2 = () => {
+    setOpen2(false);
+  };
+
+  const [open3, setOpen3] = React.useState(false);
+  const handleClickOpen3 = () => {
+    setOpen3(true);
+  };
+  const handleClose3 = () => {
+    setOpen3(false);
   };
 
   return <>
@@ -56,7 +75,7 @@ const App = () => {
           <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '-7vw'}}>
             <Card sx={{ maxWidth: 500, margin: 4 }} variant="outlined">
               <Box sx={{ position: 'relative' }}>
-                <CardActionArea>
+                <CardActionArea onClick={()=>handleClickOpen()}>
                   <CardMedia
                     component="img"
                     height="300"
@@ -81,7 +100,7 @@ const App = () => {
             </Card>
             <Card sx={{ maxWidth: 500, margin: 4 }} variant="outlined">
               <Box sx={{ position: 'relative' }}>
-                <CardActionArea>
+                <CardActionArea onClick={()=>handleClickOpen2()}>
                   <CardMedia
                     component="img"
                     height="300"
@@ -114,15 +133,82 @@ const App = () => {
             lead game designer, Andrew, executive game producer, Andrew, and head game developer, Andrew, along with help from a myriad of freelancers and consultants who aren't Andrew.
             Our development studio is based out of a Denver industrial loft, and also just happens to be a studio apartment.
           </Typography>
-          <Button variant="outlined" theme={robotoTheme}>Learn More</Button>
+          <Button variant="outlined" theme={robotoTheme} onClick={()=>handleClickOpen3()}>Learn More</Button>
           </Box>
         </Box>
         <Box sx={{display: 'flex', justifyContent: 'center', margin: 5}}>
           <img src="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/laptop.jpg?raw=true" alt="laptop" style={{width: "500px", borderRadius: '3%'}} />
         </Box>
+        <Box sx={{height: '50px'}}/>
       </Paper>
     </ThemeProvider>
     <Footer />
+    <Dialog open={open} onClose={handleClose}>
+      <DialogTitle >
+        Project Codename Fight Like An eGirl
+      </DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          <Typography variant="h6">Inspiration</Typography>
+          <Typography variant="body1">
+            Why is it that there are no side scrolling anime games?
+            The style is perfect for a 2D game but most either use a chibi anime design like Maplestory, are in 3D like Genshin Impact, or are turn based.
+            Icey is the only modern example of a 2D anime sidescroller. Inspired by their work, hopefully we can expand the genre.
+          </Typography>
+          <Typography variant="h6">System</Typography>
+          <Typography variant="body1">
+            Befriend heros by completing questlines and summon them to the overworld to level up and participate in raids.
+          </Typography>
+          <Typography variant="h6">FAQ</Typography>
+          <Typography variant="body1">
+            Is this a JRPG? No, this game is being made in America... with significant help from artists abroad.
+          </Typography>
+          <Typography variant="body1">
+            Am I playing as the hero? No, you are the summoner, you control the hero... yes, like fate, takt, ... or pokemon.
+          </Typography>
+        </DialogContentText>
+      </DialogContent>
+    </Dialog>
+    <Dialog open={open2} onClose={handleClose2}>
+      <DialogTitle >
+        Project Codename Walk in the Park
+      </DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+        <Typography variant="h5">Terrans vs Westaboos</Typography>
+          <Typography variant="h6">Introduction</Typography>
+          <Typography variant="body1">
+            In a distant galaxy, aliens receive television transmissions from the 50s. After a glipse at the golden age of westerns, they head to Earth with revolvers and lever action rifles only to encounter earthlings a millenia more advanced...
+          </Typography>
+          <Typography variant="h6">System</Typography>
+          <Typography variant="body1">
+            The FPS is round based with each team spawning on opposite sides of the map and buying weapons.
+            Humans use advanced energy based weaponry. Aliens use cap and ball era guns. The guns are the same on each side except for their styling.
+            The weapons are slow to recharge and slow to load. This game's gunplay mechanics are inspired by Hunt: Showdown.
+          </Typography>
+          <Typography variant="h6">Map</Typography>
+          <Typography variant="body1">
+            The first map is the set of a hollywood western.
+          </Typography>
+        </DialogContentText>
+      </DialogContent>
+    </Dialog>
+    <Dialog open={open3} onClose={handleClose3}>
+      <DialogTitle >
+        About Me
+      </DialogTitle>
+      <DialogContent>
+        <DialogContentText>
+          <Typography variant="body1">
+            Hello! I'm Andrew, a
+            Software Developer for the Space Force, 
+            Software Engineering Graduate Student at Harvard University,
+            and graduate of the Cal State Fullerton's Computer Science Video Game Design Focus.
+            I'm primarily a web developer in my day job and create games as passion projects on the side.
+          </Typography>
+        </DialogContentText>
+      </DialogContent>
+    </Dialog>
   </>
 }
 export default App
