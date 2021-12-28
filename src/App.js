@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer'
 import { purple } from '@mui/material/colors';
 import "@fontsource/suez-one";
+import { Button } from '@mui/material';
 
 const App = () => {
 
@@ -57,10 +58,11 @@ const App = () => {
             <Typography variant='h4' align='center' sx={{color: '#272443'}}>A One-Man Game Development Effort</Typography>
             <Typography variant='body1' theme={createTheme()} sx={{fontWeight: 'bold', margin: 3, marginLeft: '20vw', marginRight: '20vw', color: '#272443'}} align='center'>
               TAPE is an indie game developer with one mission: to create games Andrew wants to play.
-              We have a legendary team of industry developers and ivy league software engineers including
-              lead game designer, Andrew, game producer, Andrew, and head game developer, Andrew, along with a myriad of freelancers and consultants.
-              Our development studio is based out of a Denver industrial loft... and also just happens to be a studio apartment.
+              We have a legendary team of professional software engineers, certified product owners, and ivy league scholars including
+              lead game designer, Andrew, executive game producer, Andrew, and head game developer, Andrew, along with help from a myriad of freelancers and consultants who aren't Andrew.
+              Our development studio is based out of a Denver industrial loft, and also just happens to be a studio apartment.
             </Typography>
+            <Button>Learn More</Button>
         </Box>
       </Paper>
       <Footer />

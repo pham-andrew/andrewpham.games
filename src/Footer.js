@@ -7,7 +7,9 @@ export default function Footer() {
             <Toolbar>
               <Typography variant="body1">
                 © 2021 Andrew Pham,
-                Hero Image Credit: <a href="http://www.freepik.com">Designed by upklyak / Freepik</a>
+                Hero Image Credit: <a href="http://www.freepik.com">Designed by upklyak / Freepik</a>,
+                FPS Image Credit: <a href='https://www.freepik.com/photos/technology'>Technology photo created by DCStudio - www.freepik.com</a>
+                
               </Typography>
               </Toolbar>
           </Container>
