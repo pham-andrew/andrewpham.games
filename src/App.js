@@ -3,7 +3,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -144,33 +143,38 @@ const App = () => {
     </ThemeProvider>
     <Footer />
     <Dialog open={open} onClose={handleClose}>
-      <DialogTitle >
+      <DialogTitle>
         Project Codename Fight Like An eGirl
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
-          <Typography variant="h6">Inspiration</Typography>
+        <Typography variant="h6">Introduction</Typography>
           <Typography variant="body1">
-            Why is it that there are no side scrolling anime games?
-            The style is perfect for a 2D game but most either use a chibi anime design like Maplestory, are in 3D like Genshin Impact, or are turn based.
-            Icey is the only modern example of a 2D anime sidescroller. Inspired by their work, hopefully we can expand the genre.
+            After finishing your studies at the magic academy you set off as a world class... support.
+            Hopefully you can find some strong friends to help you in your endeavors. 
           </Typography>
           <Typography variant="h6">System</Typography>
           <Typography variant="body1">
-            Befriend heros by completing questlines and summon them to the overworld to level up and participate in raids.
+            Befriend heros by completing questlines then summon them to the overworld to level up and participate in raids.
           </Typography>
           <Typography variant="h6">FAQ</Typography>
           <Typography variant="body1">
             Is this a JRPG? No, this game is being made in America... with significant help from artists abroad.
           </Typography>
           <Typography variant="body1">
-            Am I playing as the hero? No, you are the summoner, you control the hero... yes, like fate, takt, ... or pokemon.
+            Am I playing as the hero? No, you are the summoner, you control the hero. Yes, like Fate, Takt, ... or Pokemon.
+          </Typography>
+          <Typography variant="h6">Inspiration</Typography>
+          <Typography variant="body1">
+            Why is it that there are no side scrolling anime games?
+            The style is perfect for a 2D game but other game designers often opt for things like a chibi anime design (like Maplestory), 3D (like Genshin Impact), or turn based RPGs.
+            Icey is the only modern example of a 2D anime sidescroller. Inspired by their Icey and Maplestory, hopefully we can bring their best aspects together.
           </Typography>
         </DialogContentText>
       </DialogContent>
     </Dialog>
     <Dialog open={open2} onClose={handleClose2}>
-      <DialogTitle >
+      <DialogTitle>
         Project Codename Walk in the Park
       </DialogTitle>
       <DialogContent>
@@ -183,8 +187,8 @@ const App = () => {
           <Typography variant="h6">System</Typography>
           <Typography variant="body1">
             The FPS is round based with each team spawning on opposite sides of the map and buying weapons.
-            Humans use advanced energy based weaponry. Aliens use cap and ball era guns. The guns are the same on each side except for their styling.
-            The weapons are slow to recharge and slow to load. This game's gunplay mechanics are inspired by Hunt: Showdown.
+            Humans use advanced energy based weaponry, aliens use cap and ball era guns.
+            The weapons are slow to recharge and slow to load. Gunplay mechanics are inspired by Hunt: Showdown.
           </Typography>
           <Typography variant="h6">Map</Typography>
           <Typography variant="body1">
@@ -194,7 +198,7 @@ const App = () => {
       </DialogContent>
     </Dialog>
     <Dialog open={open3} onClose={handleClose3}>
-      <DialogTitle >
+      <DialogTitle>
         About Me
       </DialogTitle>
       <DialogContent>
@@ -203,7 +207,7 @@ const App = () => {
             Hello! I'm Andrew, a
             Software Developer for the Space Force, 
             Software Engineering Graduate Student at Harvard University,
-            and graduate of the Cal State Fullerton's Computer Science Video Game Design Focus.
+            and graduate of the Cal State Fullerton's Computer Science Video Game Design Track.
             I'm primarily a web developer in my day job and create games as passion projects on the side.
           </Typography>
         </DialogContentText>
