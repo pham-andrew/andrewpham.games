@@ -148,27 +148,8 @@ const App = () => {
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
-        <Typography variant="h6">Introduction</Typography>
           <Typography variant="body1">
-            After finishing your studies at the magic academy you set off as a world class... support.
-            Hopefully you can find some strong friends to help you in your endeavors. 
-          </Typography>
-          <Typography variant="h6">System</Typography>
-          <Typography variant="body1">
-            Befriend heros by completing questlines then summon them to the overworld to level up and participate in raids.
-          </Typography>
-          <Typography variant="h6">FAQ</Typography>
-          <Typography variant="body1">
-            Is this a JRPG? No, this game is being made in America... with significant help from artists abroad.
-          </Typography>
-          <Typography variant="body1">
-            Am I playing as the hero? No, you are the summoner, you control the hero. Yes, like Fate, Takt, ... or Pokemon.
-          </Typography>
-          <Typography variant="h6">Inspiration</Typography>
-          <Typography variant="body1">
-            Why is it that there are no side scrolling anime games?
-            The style is perfect for a 2D game but other game designers often opt for things like a chibi anime design (like Maplestory), 3D (like Genshin Impact), or turn based RPGs.
-            Icey is the only modern example of a 2D anime sidescroller. Inspired by their Icey and Maplestory, hopefully we can bring their best aspects together.
+            Anime Platforming RPG
           </Typography>
         </DialogContentText>
       </DialogContent>
@@ -180,19 +161,8 @@ const App = () => {
       <DialogContent>
         <DialogContentText>
         <Typography variant="h5">Terrans vs Westaboos</Typography>
-          <Typography variant="h6">Introduction</Typography>
           <Typography variant="body1">
             In a distant galaxy, aliens receive television transmissions from the 50s. After a glipse at the golden age of westerns, they head to Earth with revolvers and lever action rifles only to encounter earthlings a millenia more advanced...
-          </Typography>
-          <Typography variant="h6">System</Typography>
-          <Typography variant="body1">
-            The FPS is round based with each team spawning on opposite sides of the map and buying weapons.
-            Humans use advanced energy based weaponry, aliens use cap and ball era guns.
-            The weapons are slow to recharge and slow to load. Gunplay mechanics are inspired by Hunt: Showdown.
-          </Typography>
-          <Typography variant="h6">Map</Typography>
-          <Typography variant="body1">
-            The first map is the set of a hollywood western.
           </Typography>
         </DialogContentText>
       </DialogContent>
