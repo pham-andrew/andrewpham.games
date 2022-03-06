@@ -78,7 +78,7 @@ const App = () => {
                   <CardMedia
                     component="img"
                     height="300"
-                    image="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/concept.png?raw=true"
+                    image="https://github.com/pham-andrew/andrewpham.games/blob/main/public/images/CharacterDesign.png?raw=true"
                   />
                 </CardActionArea>
                 <Box
@@ -93,7 +93,7 @@ const App = () => {
                   }}
                 >
                   <Typography variant="h5">Project FLAG</Typography>
-                  <Typography variant="body2" theme={robotoTheme}>Anime-inspired 2D Platformer RPG</Typography>
+                  <Typography variant="body2" theme={robotoTheme}>Anime Side Scrolling RPG</Typography>
                 </Box>
               </Box>
             </Card>
@@ -149,7 +149,7 @@ const App = () => {
       <DialogContent>
         <DialogContentText>
           <Typography variant="body1">
-            Anime Platforming RPG
+            Armed with her trusty rifle, our heroine explores an overgrown city...
           </Typography>
         </DialogContentText>
       </DialogContent>
